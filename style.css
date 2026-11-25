@@ -1,0 +1,26 @@
+.navbar {
+  border-bottom: 2px solid #00aeff;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: auto;
+}
+
+@media (max-width: 576px) {
+  .navbar-logo {
+    height: 32px;
+  }
+}
+
+.fa-map-pin {
+	background: transparent;
+	padding-bottom: 10px;
+	height: auto;
+	width: auto;
+	float: none;
+}
+
+.zoomable { 
+  cursor: zoom-in; 
+}

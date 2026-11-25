@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BYOK Google Maps Spatial Hosting: Full API Control | Tracepano</title>
+    <meta name="description" content="Learn how BYOK Google Maps spatial hosting eliminates middleman API markups and platform lock-in while letting mapping teams manage GPX tracks and 360° street views under their own quota.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tracepano.com/articles/byok-google-maps-spatial-hosting.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Tracepano">
+    <meta property="og:title" content="BYOK Google Maps Spatial Hosting: Full API Control | Tracepano">
+    <meta property="og:description" content="Zero middleman API markups and zero vendor lock-in: run GPX route maps and 360° street views directly under your own Google Maps API key.">
+    <meta property="og:url" content="https://tracepano.com/articles/byok-google-maps-spatial-hosting.html">
+    <meta property="og:image" content="https://tracepano.com/assets/img/devices.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BYOK Google Maps Spatial Hosting: Full API Control | Tracepano">
+    <meta name="twitter:description" content="Zero middleman API markups and zero vendor lock-in: run GPX route maps and 360° street views directly under your own Google Maps API key.">
+    <meta name="twitter:image" content="https://tracepano.com/assets/img/devices.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "BYOK Google Maps Spatial Hosting: Full API and Cost Control",
+          "description": "Why Bring Your Own Key (BYOK) architecture gives mapping teams direct control over Google Maps API billing, quotas, and spatial data ownership.",
+          "datePublished": "2026-11-25",
+          "dateModified": "2026-11-25",
+          "author": { "@type": "Organization", "name": "Tracepano" },
+          "publisher": { "@type": "Organization", "name": "Tracepano" },
+          "mainEntityOfPage": "https://tracepano.com/articles/byok-google-maps-spatial-hosting.html"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tracepano.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Articles", "item": "https://tracepano.com/articles/" },
+            { "@type": "ListItem", "position": 3, "name": "BYOK Google Maps Spatial Hosting", "item": "https://tracepano.com/articles/byok-google-maps-spatial-hosting.html" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark py-4" data-bs-theme="dark">
+        <div class="container">
+            <a href="../index.html"><img src="../assets/img/tracepano.png" alt="Tracepano" class="navbar-logo ms-lg-0"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-fill ms-auto px-4 pt-lg-0 gap-lg-3 fw-semibold">
+                    <li class="nav-item"><a class="nav-link active" href="../what-is-tracepano.html">What is Tracepano?</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../use-cases.html">Use Cases</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../faq.html">FAQ</a></li>
+                    <li class="nav-item"><a href="../contact.html"><button type="button" class="btn btn-primary px-3 py-2 fw-semibold">Contact Us</button></a></li>
+                    <li class="nav-item"><a href="../contact.html"><button type="button" class="btn btn-success px-3 py-2 fw-semibold">Request Demo</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb small">
+                <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Articles</a></li>
+                <li class="breadcrumb-item active" aria-current="page">BYOK Google Maps Spatial Hosting</li>
+            </ol>
+        </nav>
+
+        <div class="row g-5">
+            <article class="col-lg-8">
+                <p class="text-uppercase text-info fw-semibold small mb-2">BYOK Architecture</p>
+                <h1 class="fw-bold text-dark mb-3">BYOK Google Maps Spatial Hosting: Full API &amp; Cost Control</h1>
+                <p class="lead text-secondary mb-4">
+                    Many spatial platforms bundle map rendering behind opaque usage tiers and marked-up API credits.
+                    Tracepano takes the opposite approach: Bring Your Own Key (BYOK) so your maps, satellite overlays,
+                    and 360° street views run directly under your own Google Maps API quota.
+                </p>
+
+                <h2 class="h4 fw-bold mt-4 mb-3">What BYOK Means for Spatial Management Teams</h2>
+                <p>
+                    With a Bring Your Own Key architecture, Tracepano provides the browser-based admin panel, GPX route
+                    organization, and synced panorama viewer while your Google Cloud project supplies the Google Maps
+                    API key.
+                </p>
+                <ul>
+                    <li class="mb-2"><strong>Zero middleman API markups:</strong> You pay Google Cloud directly for the map loads and street-level views your team actually uses—with no platform surcharge layered on top.</li>
+                    <li class="mb-2"><strong>Direct quota and billing visibility:</strong> Usage metrics, spend alerts, and key restrictions stay inside your organization's own Google Cloud console.</li>
+                    <li class="mb-2"><strong>No platform lock-in:</strong> Your <code>.gpx</code> route files and location records remain cleanly structured and under your control.</li>
+                </ul>
+
+                <h2 class="h4 fw-bold mt-4 mb-3">How BYOK Pairs with Route &amp; Visibility Controls</h2>
+                <p>
+                    Owning your API key is especially valuable when combined with granular route management. Inside the
+                    Tracepano admin panel, teams manage locations by title, city, and capture date, upload
+                    <code>.gpx</code> tracks, and toggle each route between <strong>public</strong> and
+                    <strong>private</strong> visibility.
+                </p>
+                <p>
+                    That means internal QA teams can inspect routes over satellite overlays and synced 360° panoramas
+                    without exposing unfinished tracks, while keeping every map session tied to your existing Google
+                    Cloud billing rules. Explore all admin and viewer tools on our
+                    <a href="../features.html">Features page</a> or check common setup questions in the
+                    <a href="../faq.html">Tracepano FAQ</a>.
+                </p>
+
+                <h2 class="h4 fw-bold mt-4 mb-3">Why Lightweight BYOK Beats Monolithic GIS Hosting</h2>
+                <p>
+                    Traditional enterprise GIS hosting often demands dedicated server maintenance and per-seat desktop
+                    licenses before field teams can view a single route. A lightweight browser workspace using your own
+                    Google Maps API key delivers fast visual inspection across desktop, tablet, and mobile screens
+                    without infrastructure overhead.
+                </p>
+
+                <h2 class="h4 fw-bold mt-4 mb-3">Discuss Your BYOK Workflow</h2>
+                <p>
+                    Ready to run GPX routes and 360° street-level views directly on your own Google Maps API key?
+                    <a href="../contact.html">Request a demo</a> and our team will walk you through the setup.
+                </p>
+            </article>
+
+            <aside class="col-lg-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <h2 class="h5 fw-bold mb-3">Request a Guided Demo</h2>
+                        <p class="text-secondary small mb-3">
+                            Learn how Tracepano connects with your Google Maps API key to power GPX and 360° route
+                            management.
+                        </p>
+                        <a href="../contact.html" class="btn btn-success w-100 fw-semibold mb-2">Request Demo</a>
+                        <a href="../features.html" class="btn btn-outline-primary w-100 fw-semibold">View Features</a>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <h2 class="h6 text-uppercase text-muted fw-bold mb-3">Related Guides</h2>
+                        <ul class="list-unstyled d-flex flex-column gap-2 mb-0 small">
+                            <li><a href="google-street-view-studio-alternative.html" class="text-decoration-none">Google Street View Studio Alternative</a></li>
+                            <li><a href="gpx-route-viewer-with-street-view.html" class="text-decoration-none">GPX Route Viewer with 360° Street View</a></li>
+                            <li><a href="field-mapping-gpx-organization.html" class="text-decoration-none">Field Mapping GPX Organization</a></li>
+                            <li><a href="../what-is-tracepano.html" class="text-decoration-none">What is Tracepano?</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <section class="section section-no-border pt-5 pb-5 mt-0 mb-0" style="background: #f2f5f7;">
+        <div class="container">
+            <div class="col-md-11 mx-auto">
+                <h2 class="text-center fw-semibold mb-3">Keep full ownership of your Google Maps API usage</h2>
+                <p class="text-center text-secondary mb-4">
+                    See how Tracepano works on <a href="../features.html">Features</a> or schedule a live walkthrough.
+                </p>
+                <p class="text-center mb-0">
+                    <a href="../contact.html" class="btn btn-success px-4 py-2 fw-semibold">Request Demo</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-dark justify-content-center text-light" data-bs-theme="dark">
+        <hr class="border border-info border-1 opacity-100">
+        <div class="container">
+            <footer class="pt-5">
+                <div class="row gx-lg-5">
+                    <div class="col-10 col-lg-4 mb-5">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="../index.html"><img src="../assets/img/tracepano.png" alt="Tracepano" class="img-fluid img-responsive w-75"></a></li>
+                            <li class="nav-item mb-2"><a href="../what-is-tracepano.html" class="nav-link p-0 text-body-secondary">Tracepano is a solution to organize field captures by location, inspect tracked mileage on the map, and keep your street-level archives structured without heavy tools.</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 col-lg-auto ms-lg-auto mb-5 me-5">
+                        <h5 class="text-light">Browse</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="../features.html" class="nav-link p-0 text-body-secondary">Features</a></li>
+                            <li class="nav-item mb-2"><a href="../what-is-tracepano.html" class="nav-link p-0 text-body-secondary">What is Tracepano?</a></li>
+                            <li class="nav-item mb-2"><a href="../faq.html" class="nav-link p-0 text-body-secondary">FAQ</a></li>
+                            <li class="nav-item mb-2"><a href="../use-cases.html" class="nav-link p-0 text-body-secondary">Use Cases</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 col-lg-auto mb-3 me-5">
+                        <h5 class="text-light">Articles</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">All Articles</a></li>
+                            <li class="nav-item mb-2"><a href="google-street-view-studio-alternative.html" class="nav-link p-0 text-body-secondary">Street View Studio Alternative</a></li>
+                            <li class="nav-item mb-2"><a href="gpx-route-viewer-with-street-view.html" class="nav-link p-0 text-body-secondary">GPX Route Viewer &amp; Street View</a></li>
+                            <li class="nav-item mb-2"><a href="byok-google-maps-spatial-hosting.html" class="nav-link p-0 text-body-secondary">BYOK Google Maps Hosting</a></li>
+                            <li class="nav-item mb-2"><a href="field-mapping-gpx-organization.html" class="nav-link p-0 text-body-secondary">Field Mapping GPX Organization</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-auto mb-3 me-5">
+                        <h5 class="text-light">Contact Us</h5>
+                        <ul class="nav"><li class="nav-item mb-2 d-block"><a href="../contact.html" class="nav-link p-0 text-body-secondary">Get in Touch</a></li></ul>
+                        <ul class="nav"><li class="nav-item mb-2 d-block"><span class="nav-link p-0 text-body-secondary">Pécs, Hungary</span></li></ul>
+                        <ul class="nav mt-3">
+                            <li class="nav-item"><a href="https://instagram.com/#" class="text-white" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li class="nav-item"><a href="https://youtube.com/#" class="text-white" aria-label="YouTube"><i class="fa-brands fa-youtube ms-3"></i></a></li>
+                            <li class="nav-item"><a href="https://mastodon.social/#" class="text-white" aria-label="Mastodon"><i class="fa-brands fa-mastodon ms-3"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 pb-2 border-top text-light">
+                    <p>© 2026 Tracepano. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex"><li class="ms-3">Built by <a href="https://atakanozban.com" class="text-decoration-none text-light">Atakan Doğan Özban</a>.</li></ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
