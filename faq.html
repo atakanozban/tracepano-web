@@ -3,6 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Consent Mode v2 Default -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        var _tpConsent = null;
+        try { _tpConsent = localStorage.getItem('tracepano_cookie_consent'); } catch (e) {}
+        gtag('consent', 'default', {
+            analytics_storage: _tpConsent === 'accepted' ? 'granted' : 'denied',
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied'
+        });
+    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -35,6 +48,8 @@
     <script>
         var _paq = window._paq = window._paq || [];
         /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['requireCookieConsent']);
+        if (_tpConsent === 'accepted') { _paq.push(['setCookieConsentGiven']); }
         _paq.push(['trackPageView']);
         _paq.push(['enableLinkTracking']);
         (function () {
@@ -187,12 +202,15 @@
 
     <section class="section section-no-border pt-5 pb-5 mt-0 mb-0" style="background: #f2f5f7;">
         <div class="container">
-                <div class="col-md-11">
-                    <h2 class="text-center fw-semibold mb-4">With many features, Tracepano is at the service <br> of your tours and your routes 24/7!</h2>
-                    <p class="text-center mb-5">Grow your business in a controlled manner with Tracepano, while gaining greater prestige. <br> You can join our live, desktop-based demo sessions to explore all the features that Tracepano has to offer.</p>
-                    <p class="text-center mb-0"> <a href="contact.html"
-                            class="btn btn-success"> Get in Touch </a></p>
-                </div>
+            <div class="col-md-11 mx-auto">
+                <h2 class="text-center fw-semibold mb-3">Ready to streamline your street-level and GPX archive?</h2>
+                <p class="text-center text-secondary mb-4">
+                    Review the <a href="../features.html">Tracepano feature set</a> or book a live desktop walkthrough.
+                </p>
+                <p class="text-center mb-0">
+                    <a href="../contact.html" class="btn btn-success px-4 py-2 fw-semibold">Request Demo</a>
+                </p>
+            </div>
         </div>
     </section>
 
@@ -295,5 +313,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
     crossorigin="anonymous"></script>
+<script src="assets/js/cookie-consent.js" defer></script>
 
 </html>
